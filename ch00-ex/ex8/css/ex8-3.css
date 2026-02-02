@@ -7,7 +7,7 @@ html{
 header .inner-header{
     display: flex;
     justify-content: space-between;
-}
+}b
 header{
     position: fixed;
     width: 100%;
