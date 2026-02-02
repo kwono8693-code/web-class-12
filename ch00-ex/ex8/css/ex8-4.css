@@ -1,0 +1,69 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+header{
+    max-height: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    height: 266px;
+    position: fixed;
+    width: 100%;
+}
+header:hover{
+    max-height: 266px;
+    /* overflow: visible; */
+}
+.inner-header{
+    width: 1600px;
+    margin: 0 auto;
+}
+header .inner-header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.gnb{
+    display: flex;
+    gap: 3.3rem;
+    height: 100px;
+}
+.gnb>li{
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.gnb>li>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.gnb>li>ul>li{
+    font-size: .8rem;
+    line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.banner h1{
+    font-size: 7rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.box{
+    height: 100px;
+}
