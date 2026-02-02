@@ -1,0 +1,24 @@
+    .kedu{
+        font-family: "케듀";
+        font-weight: 700;
+    }
+.kedu2{
+    font-family: "케듀테두리";
+}
+
+.dakku{
+    font-family: 'NostalgicYuriDakku';
+    font-weight: 400;
+}
+.ballet{
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.b{
+    font-family: "Henny Penny", system-ui;
+}
+.c{
+    font-family: "Ms Madi", cursive;
+}

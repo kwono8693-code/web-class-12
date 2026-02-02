@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+.banner{
+    background: url(../img/baking.png) no-repeat 50% 50% / cover;
+    height: 599px;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* text-align: center;
+    padding-top: 13.5rem; */
+    /* position: absolute;
+    top: auto;
+    left: auto; */
+}
+main{
+    width: 1600px;
+    margin: 0 auto;
+}
+main h2{
+    font-size: 4rem;
+    line-height: 90%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+main p:nth-of-type(1){
+    font-family: 'Pretendard', sans-serif;
+    padding: 1rem 0;
+    border-top: 1px solid#000000;
+    text-align: right;
+    margin-bottom: 4rem;
+}
+main div img{
+    width: 1000px;
+    height: 430px;
+    object-fit: cover;
+}
+main p:nth-of-type(2){
+    font-family: Pretendard;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: lowercase;
+}
+main p span{
+    font-family: Pretendard;
+    font-weight: 800;
+    font-style: ExtraBold;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: lowercase;
+}

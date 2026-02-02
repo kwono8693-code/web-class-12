@@ -1,0 +1,87 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.stp1{
+    font-family: "abo";
+    font-weight: normal;
+}
+.common-frame{
+    width: 1600px;
+    text-align: center;
+    margin: 0 auto 5rem;
+}
+.common-frame h1{
+    padding-top: 8rem;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.common-frame p{
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.banner{
+    height: 700px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+.banner h2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #fff;
+    width: 1600px;
+}
+.menu{
+    width: 1604px;
+    margin: 0 auto;
+}
+.menu h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.desc1{
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.gallery{
+    display: flex;
+    gap: 1rem;
+}
+.gallery>li{
+    flex: 1;
+}
+.gallery li figure{
+    aspect-ratio: 1/1;
+    line-height: 0;
+}
+.gallery li figure img{
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gallery li h4{
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin: 1rem 0 .5rem;
+}
+.gallery li p{
+    line-height: 140%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}

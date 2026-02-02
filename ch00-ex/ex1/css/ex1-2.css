@@ -1,0 +1,39 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+}
+.inner-frame{
+    width: 1440px;
+    text-align: center;
+    margin-top: 3.75rem;
+}
+.inner-frame h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.inner-frame p{
+    line-height: 140%;
+}
+.banner{
+    background: url(../img/5d106bfeedc73ee72734dc3aeb348f9c8f2b4490\ \(1\).jpg) no-repeat 50% 50% / cover;
+    height: 441px;
+    margin: 5rem 0;
+}
+.inner-frame h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+.values li{
+    margin-bottom: .5rem;
+}
+.values li:last-of-type{
+    margin-bottom: 0;
+}

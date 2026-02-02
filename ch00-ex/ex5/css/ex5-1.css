@@ -1,0 +1,104 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+}
+.abo{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.content{
+    width: 1600px;
+    margin: 0 auto 5rem;
+}
+.content h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 8rem 0 1rem;
+}
+.content p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner{
+    height: 700px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+.banner h2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #fff;
+    width: 1600px;
+}
+.menu{
+    width: 1604px;
+    margin: 0 auto;
+}
+.menu h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+}
+.menu p:nth-of-type(1){
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.cafe-gal ul{
+    display: flex;
+    gap: 1rem;
+}
+.cafe-gal ul li{
+    flex: 1;
+    line-height: 0;
+}
+.cafe-gal ul li figure img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+.cafe-gal ul li h4{
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+.cafe-gal ul li figcaption{
+    line-height: 140%;
+}
+.cafe-gal ul li figcaption:nth-of-type(2){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+.fig2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+
+}
+/* .li-p2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+} */

@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: o;
+}
+.container{
+    border: 5px solid red;
+    display: flex;
+    height: 300px;
+    align-items: stretch;
+}
+.container > div{
+    border: 1px solid blue;
+}
+.container > div:nth-of-type(1){
+    border: 2px solid green;
+    align-self: flex-start;
+}

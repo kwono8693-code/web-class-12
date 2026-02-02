@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Pretendard', sans-serif;
+}
+.pul{
+    font-family: 'pulmuone';
+}
+.banner{
+    background: url(../img/sub_vis01_02.jpg) no-repeat 0 0 / cover;
+    height: 250px;
+    margin-bottom: 50px;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+main h1{
+    font-size: 30px;
+    background: url(../img/sub_tit_line.gif) repeat-x 0 50%;
+    margin-bottom: 100px;
+}
+main h1 span{
+    background: white;
+    padding-right: 20px;
+}
+main h2{
+    padding: 0 70px;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main h2 b{
+    color: #7eae4b;
+    font-style: normal;
+}
+.content{
+    width: 810px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 90px 50px;
+    background: #f4f4f4;
+    box-sizing: border-box;
+}
+.content h3{
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+.content p:nth-of-type(1){
+    padding-bottom: 30px;
+}

@@ -1,0 +1,31 @@
+.a{
+    border: 5px solid red;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+.b{
+    border: 5px solid blue;
+    width: 300px;
+}
+.c{
+    border: 5px solid green;
+    width: 300px;
+    height: 100px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;              
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: red;
+}
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}

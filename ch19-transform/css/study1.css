@@ -1,0 +1,74 @@
+.box{
+    border: 5px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    transition: all 1s ease 0s;
+}
+.a{
+    background-color: red;
+}
+.a:hover{
+    transform: translateX(50%);
+}
+.b{
+    background-color: blue;
+}
+.b:hover{
+    transform: translateY(-50%)
+}
+.c{
+    background-color: gold;
+}
+.c:hover{
+    transform: 
+    translateX(100px)
+    translateY(-100px);
+    
+}
+.parent{
+    background-color: #eee;
+    height: 700px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+.d{background-color: green;}
+.parent:hover .d{
+    transform: translateZ(500px);
+}
+.e{
+    background-color: coral;
+    transform-origin: -100px -50px;
+}
+.e:hover{
+    transform: rotate(360deg);
+}
+.f{background-color: darkgoldenrod;}
+.f:hover{
+    transform: rotateX(180deg);
+}
+.g{background-color: navajowhite;}
+.g:hover{
+    transform: rotateY(180deg);
+    background: url(../img/logo.png) no-repeat 50% 50% / cover;
+}
+.h{background-color: darkcyan;}
+.h:hover{
+    transform: scaleX(200%);
+}
+.i{background-color: chocolate;}
+.i:hover{
+    transform: scaleY(2);
+}
+.j{background-color: hotpink;}
+.j:hover{
+    transform: scale(0.7);
+}
+.k{background-color: gold;}
+.k:hover{
+    transform: skewX(30deg);
+}
+.l{background-color: violet;}
+.l:hover{
+    transform: skewY(-30deg);
+}

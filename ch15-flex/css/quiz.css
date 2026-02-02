@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box1{
+    display: flex;
+    width: 800px;
+    height: 100px;
+    justify-content: flex-start;
+    background: gray;
+}
+.a{
+    background: red;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.b{
+    background: green;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.c{
+    background: blue;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.d{
+    background: gold;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.e{
+    background: pink;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}

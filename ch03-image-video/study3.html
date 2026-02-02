@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 태그 복습</title>
+</head>
+<body>
+    <div>
+        이미지<img src="./img/a.jpg" alt="크리스마스 느낌이 나는 거리">
+        <p>이미지는 글자와 동일한 설정값으로 배치된다. 글자의 베이스라인과 선을 같이 한다.</p>
+        <br>
+        <p>이미지로 주소의 경로를 설정할 수도 있다. 이때 a 태그를 사용한다.</p>
+        <a href="https://www.naver.com/" target="_blank" title="해당 이미지를 클릭하면 네이버로 연결됩니다."><img src="../img/navy-blue.jpg" alt="네이비와 그레이 색"></a>
+    </div>
+
+    <br>
+
+    <div>
+        <p>비디오 태그: html에서 비디오도 삽입할 수 있다. 단 mp4 파일이 가장 호환성이 높고 파일의 크기가 20mb를 넘어가면 홈페이지가 굉장히 느려진다.</p>
+        <p>비디오의 재생 방식은 2가지가 있다. 하나는 자동 재생, 하나는 사용자가 직접 영상을 클릭하여 영상을 재생하는 방식.</p>
+        <p>비디오 태그에서 주로 사용되는 속성값은 muted, loop, autoplay, controls 등이 있다.
+        </p>
+        <p>속성명과 속성값이 같은 경우 속성명을 생략하고 입력할 수 있다. 이때 띄어쓰기를 해야 한다.</p>
+        <p>비디오의 썸네일도 지정할 수 있다. 설정 경로는 이미지, 비디오와 같다.</p>
+        <p>비디오로도 주소의 경로를 설정할 수 있다.</p>
+        <br>
+        <video src="./video/video.mp4" controls poster="./img/a.jpg"></video>
+        <video src="./video/video.mp4" autoplay muted loop></video>
+    </div>
+</body>
+</html>

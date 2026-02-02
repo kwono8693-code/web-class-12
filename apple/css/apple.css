@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrap{
+    margin: 20px 20px;
+}
+.banner{
+    background: url(../img/apple.jpg) no-repeat 100% 100% / cover;
+    width: 800px;
+    height: 600px;
+    color: white;
+    margin: 10px auto;
+}
+.banner h1{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: end;
+}
+.banner p{
+    color: orange;
+}
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+main h2{
+    background: black;
+    color: white;
+}
+.content1{
+    border: 1px solid red;
+    padding: 30px 50px;
+    text-align: center;
+}
+.content1 h3{
+    padding-bottom: 30px;
+    color: red;
+}
+.content1 p{
+    padding: 5px 0;
+}
+.content1 span{
+    color: blue;
+}
+.content2{
+    border: 1px solid red;
+    padding: 30px 50px;
+    text-align: center;
+}
+.content2 h3{
+    padding-bottom: 30px;
+    color: red;
+}
+.content2 p{
+    padding: 5px 0;
+}
+.content2 span{
+    color: blue;
+}
+.content3{
+    border: 1px solid red;
+    padding: 30px 50px;
+    text-align: center;
+}
+.content3 h3{
+    padding-bottom: 30px;
+    color: red;
+}
+.content3 p{
+    padding: 5px 0;
+}
+.content3 p:nth-of-type(2){
+    font-size: 12px;
+}

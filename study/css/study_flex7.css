@@ -1,0 +1,13 @@
+.box{
+    background-color: pink;
+    display: flex;
+    width: 600px;
+}
+.item{
+    border: 1px solid red;
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
+.item.it4{
+    flex-shrink: 2;
+}

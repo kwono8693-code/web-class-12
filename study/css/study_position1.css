@@ -1,0 +1,10 @@
+.aBox{
+    background: pink;
+    width: 300px;
+    position: relative;
+    right: -50px;
+    top: 50px;
+}
+.bBox{
+    background: blue;
+}

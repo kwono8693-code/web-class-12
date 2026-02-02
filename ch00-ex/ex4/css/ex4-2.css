@@ -1,0 +1,82 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+}
+body{
+    background: url(../img/bg.png) no-repeat 50% 0%;
+}
+.wrap{
+    margin: 6rem auto;
+    width: 1600px;
+}
+.abo{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.banner{
+    height: 599px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.banner h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content h2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+.content p:nth-of-type(1){
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+.cafe-gal1{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.cafe-gal1 figure{
+    flex: 1;
+    line-height: 0;
+}
+.cafe-gal1 figure img{
+    object-fit: cover;
+    border-radius: 1rem;
+    aspect-ratio: 520/434;
+    width: 100%;
+}
+.content h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.content p:nth-of-type(2){
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.cafe-gal2{
+    display: flex;
+    gap: 1rem;
+}
+.cafe-gal2 figure{
+    flex: 1;
+}
+.cafe-gal2 figure img{
+    border-radius: 1rem;
+    aspect-ratio: 790/434;
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,56 @@
+html{
+    font-family: pretendard, sans-serif;
+    font-size: 20px;
+}
+.aboreto{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.wrap .banner{
+    background: url(../img/baking.png) no-repeat 50% 50% / cover;
+    height: 599px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem  ;
+}
+.wrap .banner h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+main{
+    width: 1600px;
+    margin: 0 auto;
+}
+main h2{
+    font-size: 4rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+main p{
+    line-height: 140%;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+main img{
+    width: 1000px;
+    height: 430px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+} 
+main figcaption{
+    line-height: 140%;
+    text-transform: lowercase;
+}
+main span{
+    font-weight: 800;
+    font-style: ExtraBold;
+    line-height: 140%;
+    text-transform: lowercase;
+}

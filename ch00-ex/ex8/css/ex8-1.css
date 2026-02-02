@@ -1,0 +1,52 @@
+html{
+    font-family: 'Pretendard';
+    font-size: 20px;
+    font-weight: 400;
+}
+.inner-header{
+    width: 1600px;
+    margin: 0 auto;
+}
+header{
+    border: 1px solid pink;
+}
+header .inner-header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.gnb{
+    display: flex;
+    gap: 3.3rem;
+    border: 1px solid gold;
+}
+.gnb li{
+}
+/* .gnb a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    border: 1px solid red;
+} */
+.deps1{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    border: 1px solid red;
+}
+.gnb-1 ul li{
+    opacity: 0;
+    /* transition: all 1s ease 0s; */
+    margin-bottom: 1rem;
+}
+.gnb-1:hover ul li{
+    opacity: 1;
+}

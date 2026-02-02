@@ -1,0 +1,66 @@
+.a{
+    border: 10px solid red;
+    width: 300px;
+    height: 100px;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow-y: scroll; */
+    overflow: auto;
+}
+.b{
+    border: 10px solid blue;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.c{
+    border: 10px solid black;
+    border-radius: 10px;
+    white-space: nowrap;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.d{
+    /* 외우지 말고 복사해서 쓸 것 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 10px solid green;
+    width: 300px;
+}
+
+/* -webkit-이 붙은 css 속성은 비표준 속성 / webkit 계열의 브라우저에서 해석이 되려면 붙여야 한다*/
+/* 표준 속성은 모든 웹페이지에서 해석이 된다는 뜻 */
+
+/* 외우지 말 것 */
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: red;
+}
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+
+.e{
+    border: 10px solid pink;
+    width: 300px;
+    height: 100px;
+    overflow-y: scroll;
+}
+.e::-webkit-scrollbar{
+    width: 14px;
+    height: 14px;
+}
+.e::-webkit-scrollbar-thumb{
+    background: goldenrod;
+    border-radius: 6px;
+}
+.e::-webkit-scrollbar-track{
+    background-color: darkcyan;
+}

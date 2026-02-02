@@ -1,0 +1,41 @@
+html{
+    font-family: pretendard, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.wrap{
+    width: 1440px;
+    margin: 75px auto 0;
+    text-align: center;
+}
+.wrap h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.wrap p{
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.banner{
+    background: url(../img/cafe.jpg) no-repeat 50% 50% / cover;
+    height: 441px;
+    margin: 5rem auto;
+}
+.wrap h2{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+.wrap ul li:nth-of-type(1){
+    margin-bottom: .5rem;
+}
+.wrap ul li:nth-of-type(1)+li{
+    margin-bottom: .5rem;
+}

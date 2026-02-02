@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: 400px;
+    border: 10px solid red;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.box section{
+    width: 200px;
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
+.box section:nth-of-type(2){
+    flex-shrink: 2;
+}
+.box2{
+    border: 10px solid blue;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+
+}
+.box2 section{
+    flex: 1;
+    /* flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1; */
+}
+.box2 .a{
+    background: orange;
+}
+.b{
+    background: skyblue;
+}
+.c{
+    background: green;
+}
+.d{
+    background: pink;
+}

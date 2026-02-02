@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Pretendard', sans-serif;
+}
+#wrap{
+    width: 1440px;
+    margin: 75px auto;
+    text-align: center;
+}
+header h1{
+    padding: 20px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+header p{
+    font-size: 20px;
+    line-height: 140%;
+}
+.banner{
+    height: 441px;
+    background: url(../img/5d106bfeedc73ee72734dc3aeb348f9c8f2b4490\ \(1\).jpg) no-repeat 50% 50% / cover;
+    margin: 100px 0;
+}
+footer h2{
+    line-height: 100%;
+    font-style: bold;
+    font-size: 30px;
+    letter-spacing: 0%;
+    font-weight: 700;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+footer p{
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 10px 0;
+}

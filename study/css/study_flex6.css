@@ -1,0 +1,13 @@
+.box{
+    border: 1px solid red;
+    display: flex;
+    width: 500px;
+}
+.item{
+    border: 1px solid blue;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.item.lastitem{
+    /* flex-grow: 2; */
+}

@@ -1,0 +1,99 @@
+html{
+    font-size: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    /* -> inherit: 부모 태그의 값을 그대로 따르겠다. */
+}
+.box{
+    font-size: 50px;
+}
+.box h1{
+    font-size: 2em;
+}
+.box h2{
+    font-size: 2rem;
+}
+
+/* em은 부모 태그에 적용된 값과 동일하게 출력되고 
+rem은 html에 적용된 값과 동일하게 출력하겠다는 뜻이다. */
+
+.ex1{
+    font-weight: 400;
+}
+.ex2{
+    line-height: 1.5;
+}
+/* -> 행간 */
+.ex3{
+    font-style: italic;
+}
+address{
+    font-style: normal;
+}
+.ex4{
+    letter-spacing: 50px;
+}
+/* 자간 */
+
+.ex5{
+    word-spacing: 50px;
+}
+/* 단어간 여백 */
+
+.ex6{
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    white-space: pre-wrap;
+}
+/* white-space: nowrap; 줄바꿈 없이 한 줄로 문자 출력 */
+/* white-space: pre; 편집기에서 ex6 내용이 쓰여진 대로 웹페이지에 출력된다. (엔터, 줄바꿈 등등 적용됨) */
+/* white-space: prewrap; 편집기에서 ex6 내용이 쓰여진 대로 웹페이지에 적용되면서 줄바꿈이 된다.*/
+
+.ex7{
+    text-indent: 100px;
+}
+/* 문단의 첫 줄 들여쓰기 */
+
+.ex8{
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+/* text-decoration: line-through; 취소선 */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* text-decoration: initial; 속성값을 기본으로 되돌린다. 어떤 값이 기본값인지 헷갈릴 때 쓰임 */
+
+.ex9{
+    border: 1px solid red;
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+    width: 600px;
+    margin: 0 auto;
+    word-break: break-all;
+}
+/* align: justify; 문단을 좌우(양쪽)로 정렬 */
+/* word-break: break-all; 단어를 다 깨버릴 때 사용(속성의 기본값은 normal) 영어에서는 단어 안 쪼갬*/
+.ex10{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+/* text-transform: uppercase; 대문자로 설정 */
+/* text-transform: lowercase; 소문자로 설정 */
+/* text-transform: capitalize; 각 단어들마다 단어의 앞 부분만 대문자 처리 */
+.ex11{
+    font-size: 40px;
+}
+.ex11 b{
+    font-size: 0.5em;
+    vertical-align: baseline;
+    vertical-align: top;
+    vertical-align: bottom;
+    vertical-align: middle;
+}
+/*  */

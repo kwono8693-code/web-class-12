@@ -1,0 +1,188 @@
+
+@font-face {
+    font-family: 'BelovedStrokes';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Shakshakshak-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BelovedMyoeunttobak';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Myoeunddobak-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+.grenze-thin {
+  font-family: "Grenze", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.grenze-extralight {
+  font-family: "Grenze", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.grenze-light {
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.grenze-regular {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grenze-medium {
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.grenze-semibold {
+  font-family: "Grenze", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.grenze-bold {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grenze-extrabold {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.grenze-black {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.grenze-thin-italic {
+  font-family: "Grenze", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.grenze-extralight-italic {
+  font-family: "Grenze", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.grenze-light-italic {
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.grenze-regular-italic {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.grenze-medium-italic {
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.grenze-semibold-italic {
+  font-family: "Grenze", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.grenze-bold-italic {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.grenze-extrabold-italic {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.grenze-black-italic {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.the-girl-next-door-regular {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+

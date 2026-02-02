@@ -1,0 +1,99 @@
+html{
+    font-family: 'Pretendard';
+    font-size: 20px;
+    font-weight: 400;
+}
+.common-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    border-bottom: 2px solid #BE0707;
+}
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 8rem;
+}
+nav{
+    width: 996px;
+    height: 100px;
+}
+.lnb{
+    display: flex;  
+    gap: 1rem;
+    justify-content: flex-end;
+    height: 30px;
+}
+.lnb a{
+    font-size: .8rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.gnb{
+    display: flex;
+}
+.gnb{
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 70px;
+}
+.gnb li{
+    flex: 1;
+
+}
+.gnb li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+.banner{
+    height: 100vh;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    /* padding-top: 5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    width: 1600px;
+    margin: 0 auto;
+    font-size: 7rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content{
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.content h2{
+    font-size: 3rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.desc1{
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.content figure img{
+    height: 441px;
+    width: 100%;
+    object-fit: cover;
+}

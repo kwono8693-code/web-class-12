@@ -1,0 +1,76 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+}
+.wrap{
+    background: url(../img/bg.png) no-repeat 50% 0 / 100% auto;
+}
+.stp1{
+  font-family: "abo";
+  font-weight: 400;
+  font-style: normal;
+}
+.common-frame{
+    width: 1600px;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+.banner{
+    height: 599px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.banner h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.common-frame h2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.desc1{
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 2.4rem 0;
+}
+.cafe-gal{
+    display: flex;
+    gap: 1rem;
+}
+.cafe-gal figure{
+    flex: 1;
+    line-height: 0;
+    aspect-ratio: 520/434;
+}
+.cafe-gal figure img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+/* 
+이미지가 작은 경우에 빈 공간이 생길 수 있기 때문에 aspect-ratio는 이미지가 아니라 이미지가 들어갈 공간이 figure로 해야 됨*/
+.common-frame h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+.desc2{
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.cafe-gal.type2 figure{
+    /* flex: 1; */
+    /* line-height: 0; */
+    aspect-ratio: 790/434;
+}

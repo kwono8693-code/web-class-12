@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box2{
+    display: flex;
+    width: 800px;
+    height: 100px;
+    justify-content: flex-start;
+    background: gray;
+}
+.box2 .a{
+    background: red;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    order: 2;
+}
+.box2 .b{
+    background: green;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    order: 4;
+}
+.box2 .c{
+    background: blue;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    order: 1;
+}
+.box2 .d{
+    background: gold;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    order: 5;
+}
+.box2 .e{
+    background: hotpink;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    order: 3;
+}
+.box3{
+    display: flex;
+    width: 800px;
+    height: 100px;
+    justify-content: flex-end;
+    background: gray;
+}
+.box3 .a{
+    background: red;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.box3 .b{
+    background: green;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.box3 .c{
+    background: blue;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.box3 .d{
+    background: gold;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.box3 .e{
+    background: hotpink;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.box4{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background: gray;
+    justify-content: center;
+    align-items: center;
+}
+.box4 .a{
+    background: red;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box4 .b{
+    background: green;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box4 .c{
+    background: blue;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box4 .d{
+    background: gold;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box4 .e{
+    background: hotpink;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box5{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background: gray;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+.box5 .a{
+    background: red;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box5 .b{
+    background: green;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box5 .c{
+    background: blue;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box5 .d{
+    background: gold;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box5 .e{
+    background: hotpink;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box6{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background: gray;
+    flex-wrap: wrap;
+}
+.box6 div{
+    flex-basis: 50%;
+    /* height: 100px; */
+}
+.box6 .a{
+    background: red;
+}
+.box6 .b{
+    background: green;
+}
+.box6 .c{
+    background: blue;
+}
+.box6 .d{
+    background: gold;
+}
+.box6 .e{
+    background: hotpink;
+}
+.box7{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background: gray;
+    justify-content: space-between;
+}
+.box7 div{
+    width: 100px;
+    height: 100px;
+}
+.box7 .a{
+    background: red;
+}
+.box7 .b{
+    background: green;
+}
+.box7 .c{
+    background: blue;
+}
+.box7 .d{
+    background: gold;
+}
+.box7 .e{
+    background: hotpink;
+}

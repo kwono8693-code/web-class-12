@@ -1,0 +1,97 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+header{
+    border-bottom: 2px solid #BE0707;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    /* right: 0; */
+    /* 너비를 100vw로 안 하는 이유는 바디 태그의 내용이 길어졌을 때 오른쪽에 스크롤이 생기면 스크롤까지 포함하여 100vw가 되기 때문에 스크롤에 가려서 안 보이는 내용이 생기면 아래쪽으로도 스크롤이 생길 수 있음 */
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+header .inner-frame{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    line-height: 0;
+}
+nav{
+    width: 966px;
+    height: 100px;
+}
+.lnb{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    gap: 1rem;
+    align-items: center;
+    font-family: Pretendard;
+    font-size: .8rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.gnb{
+    display: flex;
+    height: 70px;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.gnb li{
+    flex: 1;
+}
+.gnb li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 100%;를 안 줘도 되는 이유: a태그가 flex-container이기 때문에 부모 만큼의 너비를 갖게 된다. 부모 태그인 li는 flex:1;로 너비를 갖게 됐음*/
+}
+.banner{
+    height: 100vh;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 6rem;
+}
+.banner h2{
+    width: 1600px;
+    font-size: 7rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.inner-frame h3{
+    font-size: 3rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.inner-frame p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.sub-banner{
+    height: 441px;
+}
+.sub-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: o;
+    padding: 0;
+}
+h1{
+    text-align:center;
+    width: auto;
+    height: 50px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+h2{
+    padding: 0 auto;
+}
+h3{
+    color: red;
+    padding: 10px 20px;
+}
+ul{
+    margin:20px;
+    list-style-type: none;
+}
+li{
+    padding: 0 50px;
+}

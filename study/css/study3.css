@@ -1,0 +1,89 @@
+html{
+    font-size: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+}
+h1{
+    font-family: 'BelovedStrokes';
+    font-weight: normal;
+    color: red;
+}
+h2{
+    font-family: 'BelovedMyoeunttobak';
+}
+p{
+    font-family: 'Paperozi';
+}
+.a{
+    font-weight: 500;
+}
+.b{
+    font-family: "Grenze", serif;
+}
+.c{
+    font-family: "The Girl Next Door", cursive;
+}
+.d{
+    font-size: 1rem;
+
+}
+.box{
+    font-size: 50px;
+}
+.box h1{
+    font-size: 2rem;
+}
+.box h2{
+    font-size: 1em;
+}
+.box p{
+    font-weight: 100;
+}
+.d{
+    font-style: italic;
+}
+address{
+    font-style: normal;
+}
+.e{
+    line-height: 2;
+}
+.f{
+    letter-spacing: 100px;
+}
+.g{
+    word-spacing: 50px;
+}
+.h{
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    white-space: pre-wrap;
+}
+.i{
+    text-indent: 100px;
+}
+.j{
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+.k{
+    /* text-align: right; */
+    text-align: justify;
+    border: 1px solid red;
+    word-break: break-all;
+}
+.l{
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+}
+.l b{
+    font-size: 0.5em;
+    /* vertical-align: baseline; */
+    /* vertical-align: top; */
+    vertical-align: middle;
+}

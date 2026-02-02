@@ -1,0 +1,38 @@
+html{
+    font-family: 'Pretendard';
+}
+.a{
+    height: 250px;
+    background: url(../img/sub_vis01_02.jpg) no-repeat 50% 50% / contain;
+}
+.b{
+    margin: 0 auto;
+    width: 1300px;
+    background: url(../img/sub_tit_line.gif) repeat 100% right / cover;
+}
+h2{
+    margin: 50px auto;
+    font-size: 30px;
+}
+h3{
+    font-size: 52px;
+    margin: 100px 50px 50px;
+    text-align: center;
+    font-weight: normal;
+}
+.box{
+    background-color: lightgrey;
+    margin: auto auto;
+    padding: 10px 20px;
+    font-size: 35px;
+    width: 1100px;
+}
+.font{
+    font-family: pulmuone;
+    color: lightgreen;
+}
+.box p{
+    white-space: pre-wrap;
+    text-align: center;
+    padding: 10px;
+}

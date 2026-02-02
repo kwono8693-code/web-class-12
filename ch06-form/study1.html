@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그</title>
+    <style>
+        label{display: none;}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="user-id">아이디:</label>
+            <input type="text" placeholder="아이디" id="user-id">
+            <p>아이디는 특수문자를 사용하면 안 됩니다. 8~12 이내의 영어와 숫자를 혼용해 주세요.</p>
+        </div>
+        <div>
+            <label for="user-pw">비밀번호:</label>
+            <input type="password" placeholder="비밀번호" id="user-pw">
+        </div>
+        <div>
+            <button type="submit">로그인</button>
+        </div>
+    </form>
+
+    <form action="여기는 개발자 영역">
+        <div>
+            <label for="">아이디</label>
+            <input type="text" id="user-id" placeholder="아이디">
+        </div>
+        <div>
+            <label for="">비밀번호</label>
+            <input type="password" id="user-pw" placeholder="비밀번호">
+        </div>
+        <button type="submit">로그인</button>
+    </form>
+</body>
+</html>

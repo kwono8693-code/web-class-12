@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: o;
+}
+.container{
+    border: 1px solid red;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: flex-end;
+}
+/* flex-container */
+.container>div{
+    border: 1px solid blue;
+}
+/* flex-items(플렉스 컨테이너의 자식태그들) */
