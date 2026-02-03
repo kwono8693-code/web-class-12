@@ -10,10 +10,10 @@ header{
     height: 266px;
     position: fixed;
     width: 100%;
+    transition: all .3s ease 0s;
 }
 header:hover{
     max-height: 266px;
-    /* overflow: visible; */
 }
 .inner-header{
     width: 1600px;
