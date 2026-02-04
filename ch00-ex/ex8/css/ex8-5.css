@@ -4,15 +4,8 @@ html{
     font-weight: 400;
 }
 header{
-    max-height: 100px;
-    overflow: hidden;
-    background-color: #fff;
     position: fixed;
     width: 100%;
-    transition: all .3s ease 0s;
-}
-header:hover{
-    max-height: 500px;
 }
 .inner-header{
     width: 1600px;
@@ -29,28 +22,40 @@ header .inner-header{
     display: flex;
     gap: 3.3rem;
 }
-.gnb>li>a{
-    display: flex;
-    height: 100px;
-    align-items: center;
+.gnb>li{
     font-weight: 600;
     font-size: .9rem;
     line-height: 100%;
     text-transform: uppercase;
+    overflow: hidden;
+    max-height: 100px;
+    transition: all .3s ease 0s;
+    background-color: #fff;
+}
+.gnb>li:hover{
+    max-height: 266px;
+}
+.gnb>li>a{
+    display: flex;
+    align-items: center;
+    height: 100px;
 }
 .gnb ul>li{
+    font-weight: 400;
     font-size: .8rem;
     line-height: 100%;
-    font-weight: 400;
     text-transform: uppercase;
     margin-top: 1rem;
 }
+.box{
+    height: 100px;
+}
 .banner{
+    height: 800px;
     background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
 }
 .banner h1{
     font-size: 7rem;
@@ -58,7 +63,4 @@ header .inner-header{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-}
-.box{
-    height: 100px;
 }

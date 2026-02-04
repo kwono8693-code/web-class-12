@@ -6,10 +6,12 @@ html{
 header{
     max-height: 100px;
     overflow: hidden;
-    background-color: #fff;
+    transition: all .5s ease 0s;
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    transition: all .3s ease 0s;
+    background-color: #fff;
 }
 header:hover{
     max-height: 500px;
@@ -17,13 +19,9 @@ header:hover{
 .inner-header{
     width: 1600px;
     margin: 0 auto;
-}
-header .inner-header{
     display: flex;
     justify-content: space-between;
-}
-.logo{
-    line-height: 0;
+    padding-bottom: 2.5rem;
 }
 .gnb{
     display: flex;
@@ -31,26 +29,31 @@ header .inner-header{
 }
 .gnb>li>a{
     display: flex;
-    height: 100px;
     align-items: center;
+    height: 100px;
+    margin-bottom: 1rem;
     font-weight: 600;
     font-size: .9rem;
     line-height: 100%;
     text-transform: uppercase;
 }
 .gnb ul>li{
+    margin-bottom: 1rem;
+    font-weight: 400;
     font-size: .8rem;
     line-height: 100%;
-    font-weight: 400;
     text-transform: uppercase;
-    margin-top: 1rem;
+}
+.gnb ul>li:last-of-type{
+    margin-bottom: 0;
 }
 .banner{
+    height: 800px;
     background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    margin-top: 100px;
 }
 .banner h1{
     font-size: 7rem;
@@ -58,7 +61,5 @@ header .inner-header{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-}
-.box{
-    height: 100px;
+    width: 1600px;
 }
