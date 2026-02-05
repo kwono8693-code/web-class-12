@@ -1,0 +1,71 @@
+h1{
+    margin-top: 200px;
+}
+.box1{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 20px 20px 20px blue;
+}
+.box2{
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 
+    20px 20px 0 red,
+    -20px -20px 0 blue,
+    40px 40px 0 green;
+}
+.box3{
+    border: 1px solid gold;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 0px 0px 0px red;
+    transition: all .6s ease 0s;
+}
+.box3:hover{
+    box-shadow: 10px 10px 20px red;
+}
+.filter1 img{
+    filter: grayscale(0);
+    transition: all 1s ease 0s;
+}
+.filter1 img:hover{
+    filter: grayscale(1);
+}
+.filter2 img{
+    filter: brightness(0.5);
+    transition: all 1s ease 0s;
+}
+.filter2 img:hover{
+    filter: brightness(1);
+}
+.filter3 img{
+    filter: blur(20px);
+    transition: all 1s ease 0s;
+}
+.filter3 img:hover{
+    filter: blur(0);
+}
+.filter4 img{
+    filter: hue-rotate(180deg);
+    transition: all 1s ease 0s;
+}
+.filter4 img:hover{
+    filter: hue-rotate(0);
+}
+.bg{
+    background: linear-gradient(30deg, gold, darkgreen);
+}
+.blend1{
+    mix-blend-mode: color-burn;
+}
+.blend2{
+    mix-blend-mode: difference;
+}
+.blend3{
+    mix-blend-mode: overlay;
+}
