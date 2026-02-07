@@ -1,0 +1,14 @@
+@media (max-width:1024px){
+    html {
+        font-family: 'Pretendard';
+        font-size: var(--base-pad);
+        font-weight: 400;
+    }
+    .content-box {
+    width: auto;
+    margin: 0 2rem;
+    }
+    .gal figure {
+    aspect-ratio: 467/434;
+    }
+}

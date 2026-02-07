@@ -1,0 +1,21 @@
+@media (max-width:768px){
+    html {
+        font-family: 'Pretendard';
+        font-size: var(--base-mo);
+        font-weight: 400;
+    }
+    .banner {
+    border-radius: 0 0 80px 80px;
+    }
+    .content-box {
+    width: auto;
+    margin: 0 1rem;
+    }
+    .gal{
+        flex-wrap: wrap;
+    }
+    .gal figure {
+        aspect-ratio: 365/200;
+        flex-basis: 100%;
+    }
+}

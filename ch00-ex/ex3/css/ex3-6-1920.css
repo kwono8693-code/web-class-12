@@ -1,0 +1,72 @@
+@media (max-width:1920px){
+    html{
+        font-family: 'Pretendard';
+        font-size: var(--base-pc);
+        font-weight: 400;
+    }
+    body {
+        background: url(../img/BACKGROUND.png) repeat-x 0% 55%;
+    }
+    .banner {
+        height: 599px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 150px 150px;
+        background: url(../img/banner.png) no-repeat 50% 75% / cover;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .content-box{
+        width: 1600px;
+        margin: 0 auto;
+    }
+    .box1{
+        margin-bottom: 5rem;
+    }
+    .box1 h2{
+        font-size: 7.5rem;
+        line-height: 90%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        padding-top: 10rem;
+        background: url(../img/Vector\ 1.svg) no-repeat 50% 0;
+    }
+    .box1 p{
+        line-height: 140%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .gal{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    .gal figure{
+        flex: 1;
+        aspect-ratio: 790/434;
+    }
+    .gal figure img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .content-box h3{
+        font-size: 2rem;
+        line-height: 140%;
+        margin-bottom: 1rem;
+    }
+    .desc1{
+        line-height: 140%;
+        margin-bottom: .5rem;
+    }
+    .desc2{
+        line-height: 140%;
+    }
+}
