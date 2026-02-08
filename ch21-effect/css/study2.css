@@ -1,0 +1,52 @@
+h1{
+    margin-top: 200px;
+}
+.box1{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 20px 20px 10px blue;
+}
+.box2{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 
+    20px 20px 20px blue,
+    -10px -10px 10px red,
+    40px 40px 30px green;
+}
+.box3{
+    border: 1px solid gold;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 0 0 0 red;
+    transition: all .6s ease 0s;
+}
+.box3:hover{
+    box-shadow: 10px 10px 20px red;
+}
+.filter1{
+    filter: grayscale(0);
+    transition: all .6s ease 0s;
+}
+.filter1:hover{
+    filter: grayscale(1);
+}
+.filter2{
+    filter: brightness(.5);
+    transition: all .6s ease 0s;
+}
+.filter2:hover{
+    filter: brightness(1);
+}
+.filter3{
+    filter: blur(20px);
+    transition: all .6s ease 0s;
+}
+.filter3:hover{
+    filter: blur(0);
+}

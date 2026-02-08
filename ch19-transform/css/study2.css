@@ -33,7 +33,7 @@
     height: 1000px;
     background-color: #eee;
     perspective: 1000px;
-    perspective-origin: 100% 100%;
+    perspective-origin: 50% 50%;
 }
 .d{
     background-color: green;
@@ -55,5 +55,64 @@
     transition: all 1s ease 0s;
 }
 .f:hover{
-    transform: rotateX(30deg);
+    transform: rotateX(180deg);
+}
+.g{
+    background-color: goldenrod;
+    transition: all 1s ease 0s;
+}
+.g:hover{
+    transform: rotateY(180deg);
+    background: url(../img/logo.png) no-repeat 50% 50% / cover;
+}
+.h{
+    background-color: beige;
+    transition: all 1s ease 0s;
+}
+.h:hover{
+    transform: scaleX(2);
+}
+.i{
+    background-color: dodgerblue;
+    transition: all 1s ease 0s;
+}
+.i:hover{
+    transform: scaleY(1.5);
+}
+.j{
+    background-color: violet;
+    transition: all 1s ease 0s;
+}
+.j:hover{
+    transform: scale(.7);
+}
+.k{
+    background-color: greenyellow;
+    transition: all 1s ease 0s;
+}
+.k:hover{
+    transform: skewX(30deg);
+}
+.l{
+    background-color: hotpink;
+    transition: all 1s ease 0s;
+}
+.l:hover{
+    transform: skewY(-30deg);
+}
+.banner{
+    width: 1000px;
+    height: 1000px;
+    background-color: skyblue;
+    position: relative;
+}
+.content{
+    border: 1px solid red;
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

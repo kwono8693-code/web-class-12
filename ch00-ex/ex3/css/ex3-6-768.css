@@ -12,10 +12,11 @@
     margin: 0 1rem;
     }
     .gal{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
     }
     .gal figure {
         aspect-ratio: 365/200;
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
     }
 }
