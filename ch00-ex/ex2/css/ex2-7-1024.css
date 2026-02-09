@@ -1,8 +1,6 @@
 @media (max-width:1024px){
     html{
-        font-family: 'Pretendard';
         font-size: var(--base-pad);
-        font-weight: 400;
     }
     .common-frame {
         width: auto;
