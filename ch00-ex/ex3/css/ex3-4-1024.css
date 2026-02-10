@@ -1,0 +1,22 @@
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    body {
+    background: url(../img/BACKGROUND.png) repeat-x 0 66%;
+    }
+    .content {
+    width: auto;
+    margin: 0 2rem;
+    }
+    .content h2 {
+    font-size: 80px;
+    background: url(../img/Vector\ 1.svg) no-repeat 50% -25%;
+    }
+
+    .gal figure {
+    flex: 1;
+    aspect-ratio: 467/434;
+    line-height: 0;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <p>변할 가능성이 있는 수 / 값이 저장되는 공간</p>
+    <script>
+        let a; // a라는 변수를 선언한다.
+        a = 10; // a라는 변수 10으로 초기화한다. (최초로 저장을 하는 경우만 초기화라고 한다.)
+        a + 10;
+        console.log(a + 10);
+        console.log("a");
+        a = a + 10; // 대입한다, 설정한다, 저장한다.
+        console.log(a);
+        a+= 10; // a에서 10을 더한 값을 다시 a로 저장한다.
+        console.log(a);
+
+        let b = 20;
+        b-=2; // b에서 2를 뺀 값을 다시 b로 저장한다.
+        console.log(b);
+
+        let c = "안녕하세요"; // "안녕하세요"라는 문자 데이터를 선언함과 동시에 초기화한다.
+        c[2];
+        console.log(c[2]);
+        c[2]+c[4];
+        console.log(c[2]+c[4]);
+        (c[2]+c[4]).length;
+        console.log((c[2]+c[4]).length);
+        c.length;
+        console.log(c.length);
+        Math.max((c[2]+c[4]).length, c.length);
+        console.log(Math.max((c[2]+c[4]).length, c.length));
+        document.write("안녕!!") // 바디 태그에 필기한 것
+
+        // prompt("당신의 이름은 무엇인가요?")
+
+        let name = prompt("당신의 이름은 무엇인가요?")
+
+        document.write("<h3>"+name+"! 안녕!!</h3>")
+        let age = prompt(name + "님의 나이는 몇 살인가요?")
+        document.write("<p>"+name+"님의 나이는 "+age+"살이네요. 반갑습니다.</p>")
+    </script>
+    <h1>상수</h1>
+    <p>변하지 않는 수</p>
+    <script>
+        123;
+        "권오영";
+    </script>
+</body>
+</html>
