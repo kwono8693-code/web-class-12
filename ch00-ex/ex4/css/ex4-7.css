@@ -1,69 +1,130 @@
-html{
-    font-size: 20px;
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+}
+
+@media (max-width:1920px){
+    html{
+    font-size: var(--base-pc);
     font-weight: 400;
     font-family: 'Pretendard';
+    }
+    body{
+        background: url(../img/bg.png) no-repeat 50% 0% ;
+    }
+    .wrap{
+        width: 1600px;
+        margin: 0 auto;
+        padding: 6rem 0;
+    }
+    .banner{
+        height: 599px;
+        background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5rem;
+        margin-bottom: 6rem;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .content h2{
+        font-size: 7.5rem;
+        line-height: 90%;
+        text-transform: uppercase;
+    }
+    .desc1 {
+        line-height: 140%;
+        text-transform: uppercase;
+        margin: 48px 0;
+    }
+    .gal{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .gal figure{
+        flex: 1;
+        aspect-ratio: 520/434;
+    }
+    .gal figure img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    .content h3{
+        font-size: 2rem;
+        line-height: 140%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .desc2{
+        line-height: 140%;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+    .type2 figure{
+        flex: 1;
+        aspect-ratio: 790/434;
+    }
 }
-body{
-    background: url(../img/bg.png) no-repeat 50% 0% ;
+
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .wrap {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .content h2 {
+        font-size: 80px;
+    }
+    .gal figure {
+        flex: 1;
+        aspect-ratio: 1/1;
+    }
 }
-.wrap{
-    width: 1600px;
-    margin: 0 auto;
-    padding: 6rem 0;
-}
-.banner{
-    height: 599px;
-    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2.5rem;
-    margin-bottom: 6rem;
-}
-.banner h1{
-    font-size: 2.5rem;
-    line-height: 100%;
-    text-transform: uppercase;
-    color: #fff;
-}
-.content h2{
-    font-size: 7.5rem;
-    line-height: 90%;
-    text-transform: uppercase;
-}
-.desc1{
-    line-height: 140%;
-    text-transform: uppercase;
-    margin: 2.4rem 0;
-}
-.gal{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-.gal figure{
-    flex: 1;
-    aspect-ratio: 520/434;
-}
-.gal figure img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-.content h3{
-    font-size: 2rem;
-    line-height: 140%;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.desc2{
-    line-height: 140%;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 2rem;
-}
-.type2 figure{
-    flex: 1;
-    aspect-ratio: 790/434;
+
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    body {
+        background: url(../img/bg.png) no-repeat 50% 134%;
+    }
+    .wrap {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .content h2 {
+        font-size: 50px;
+    }
+    .gal {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(150px, auto);
+    }
+    .gal figure {
+        max-height: 150px;
+        width: 100%;
+    }
+    .gal figure:last-of-type{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .type2{
+        display: flex;
+        flex-direction: column;
+    }
+    .type2 figure{
+        aspect-ratio: 365/150;
+    }
 }

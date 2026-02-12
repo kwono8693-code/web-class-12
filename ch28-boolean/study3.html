@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        10 > 2 && 5 > 2; // true가 나오기 위해서는 and의 모든 조건이 true가 되어야 한다.
+        5 > 1 && 5 > 2 && 5 < 3; // false
+        10 > 4 && 0 && 20; // false 0이 false라서
+        let b = 10 > 4 && 0 && 20;
+        console.log(b) // 0 and는 모든 값이 true여야 true가 나오기 때문에 false 값이 나오는 순간 해당 false 값을 추출한다.
+
+        10<2 || 3!=3 || 4>2; // true or은 true 값이 하나만 있어도 true
+        0 || !10 || !!20 // true
+        10  || "" || 20 // true
+        let a = 10  || "" || 20;
+        console.log(a) // or는 모든 값 중에 하나만 true가 나와도 다 true가 되기 때문에 true 값이 나오는 순간 그 true 값을 추출
+
+        //and와 or 모두 간주 표현이었기 때문에 false, true가 아닌 실제 값이 나온다.
+    </script>
+</body>
+</html>

@@ -16,7 +16,7 @@
     <div class="wrap">
         <h1>나의 체질량 지수 (BMI)</h1>
         <p>체질량 지수는 자신의 몸무게(kg)를 키의 제곱(m)으로 나눈 값이다. 체질량 지수는 근육량, 유전적 원인, 다른 개인적 차이를 반영하지 못하는 단점이 있음에도 불구하고 의료인들이 가장 많이 쓰는 방법 중 하나이다.</p>
-        <dl class="bmi-dl">
+        <!-- <dl class="bmi-dl">
             <dt>이름</dt>
             <dd><script>document.write(""+userName+"")</script></dd>
             <dt>체중</dt>
@@ -25,7 +25,29 @@
             <dd><script>document.write(""+userHeight+"")</script></dd>
             <dt>bmi</dt>
             <dd><script>document.write(""+userBmi+"")</script></dd>
-        </dl>
+        </dl> -->
+        <script>
+                let userName = prompt("이름을 입력해 주세요.");
+                let userWeight = Number(prompt("몸무게를 입력해 주세요."))
+                let userHeight = Number(prompt("키를 입력해 주세요."))
+                let bmi = (userWeight / Math.pow(userHeight/100,2)).toFixed(2)
+                let numberBmi = userWeight / Math.pow(userHeight/100,2)
+                let stateBmi = numberBmi < 18.5 ? "저체중" : numberBmi < 23 ? "정상" : numberBmi < 25 ? "과체중" : "비만" 
+                document.write(`
+                    <dl class="bmi-dl">
+                        <dt>이름</dt>
+                        <dd>${userName}</dd>
+                        <dt>체중</dt>
+                        <dd>${userWeight}kg</dd>
+                        <dt>키</dt>
+                        <dd>${userHeight}cm</dd>
+                        <dt>bmi</dt>
+                        <dd>${bmi}</dd>
+                        <dt>상태</dt>
+                        <dd>${stateBmi}</dd>
+                    </dl>
+                    `)
+         </script>
         <div class="bmigrp">
                 <span class="t1">BMI</span>
                 <span class="t2">체중</span>
@@ -49,6 +71,7 @@
         let userWeight = Number(prompt("몸무게를 입력해 주세요."))
         let userHeight = Number(prompt("키를 입력해 주세요."))
         let bmi = (userWeight / Math.pow(userHeight/100,2)).toFixed(2)
+        let state = bmiNumber < 18.5 ? "저체중" : bmiNumber < 23 ? "정상" : bmiNumber < 25 ? "과체중" : "비만" 
         document.write(`
             <dl class="bmi-dl">
                 <dt>이름</dt>
@@ -60,6 +83,7 @@
                 <dt>bmi</dt>
                 <dd>${bmi}</dd>
             </dl>
+            <p>${userName}님은 ${state}입니다.</p>
         `)
     </script>
     <!-- 템플릿 문자 데이터 표현 방식(백틱) "++"< 기존의 방식 `++` < 백틱의 방식 ${} < 백틱 전용 문자 데이터 표현 방식 -->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean  - 참 거짓 데이터</h1>
+    <script>
+        10>2; // true
+        10<2; // false
+        10>=2; // true 10이 2보다 크거나 같다. 크거나 같다의 의미가 아니라 '이상'이다의 의미(둘 중 하나라도 참이면 OR이니까 결과는 true)
+        10<=2; // false 10이 2보다 작거나 같다.
+        10==10; // true 10이 10과 같다.
+        10===10; // true 10이 10과 데이터 형태까지 모두 같다. (엄격한 비교를 할 때 쓰는 문장)
+        10!=1; // true 10은 1과 같지 않다. (!는 부정의 의미 / not)
+        !(10>2); // false !(true) = false / !!는 true(부정의 부정은 긍정)
+        console.log(10>2); // true
+        console.log(!(10>2)); // false
+
+        // 간주 표현 무언가가 존재한다 존재하지 않는다를 두고 판단하는 것 (~로 간주되는 것)
+        0; // 0은 숫자가 존재하지 않는 것으로 간주되어 false
+        ""; // 문자 데이터의 내용이 없는 것도 false로 간주된다.
+        let a; // 변수에 값을 대입하지 않아도 false로 간주한다.
+        undefined; // false로 간주
+        null; // null도 false로 간주 (null : 비운다 / 없다)
+
+        12; // 12라는 수가 있기 때문에 true
+        -12; // -12도 수가 있다고 판단하여 true
+        !-12; // true의 부정이기 때문에 false
+        !"" // flase의 부정으로 true
+        !a // true
+
+        let b = null; // b라는 변수를 만들어서 null(비우다)
+
+    </script>
+</body>
+</html>
