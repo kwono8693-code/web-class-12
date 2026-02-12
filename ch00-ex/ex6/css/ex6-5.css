@@ -1,0 +1,47 @@
+html{
+    font-size: 20px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+}
+header .common-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+.common-frame{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #BE0707;
+}
+.gnb{
+    display: flex;
+}
+.gnb>li{
+    border: 1px solid red;
+}
+.gnb a{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid blue;
+    height: 100%;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner{
+    height: 700px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-size: 7.5rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
