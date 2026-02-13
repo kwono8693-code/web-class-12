@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study1</title>
+</head>
+<body>
+    <h1>boolean - 참 거짓 데이터</h1>
+    <script>
+        10 > 2; // true
+        10 >= 2; // true 10은 2 이상이다.
+        10 < 2; //false
+        10 == 10; // true 10이 10과 같다. (값만 같으면 ok 실무에서 거의 쓰이지는 않음)
+        10 === 10; // true 10이 10과 데이터 형태까지 모두 같다.
+        10 !=1 ; // true 10은 1과 같지 않다. (!는 부정의 의미인 not)
+        !(10>2); // 10이 2보다 크다가 true이지만 !(true) 트루의 not이니까 false
+
+        // 간주 표현: 무언가가 존재한다 존재하지 않는다를 두고 판단하는 것(~로 간주되는 것)
+        0, -0, 0n // 0은 숫자가 존재하지 않는 것으로 간주되어 false
+        ""; // 문자 데이터의 내용이 없는 것으로 false로 간주
+        let a; // 변수에 값을 대입하지 않아서 false로 간주
+        undefined; // 정의되지 않아서 값이 없으므로 false로 간주
+        null; // 의도적으로 비워둔 값 / 명시적으로 '비어있음'이어서 false로 간주 (null: 비운다 / 없다)
+        NaN; // 숫자가 아님(유효한 숫자가 없음)으로 간주되어 false
+
+        12; // 12라는 숫자가 있기 때문에 true로 간주
+        -12; // -12도 수가 있다고 판단하여 true로 간주
+        !-12; // true의 부정이기 때문에 false로 간주
+        !"" // false의 부정(!)으로 true로 간주
+        !a // true let a가 값이 저장돼 있지 않아 false인 상태에서 부정(!)이 붙어서 true
+        let b = null;
+        console.log(b)
+    </script>
+</body>
+</html>
