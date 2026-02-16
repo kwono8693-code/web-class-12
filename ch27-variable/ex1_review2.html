@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1-2</title>
+</head>
+<body>
+    <h1>문제</h1>
+    <p>사용자에게 이름과 국어 점수, 영어 점수, 수학 점수, 사회 점수를 각각 물어보고 평균값을 계산하여, 다음과 같이 홈페이지에 나타날 수 있도록 소스코드를 작성하세요. p태그로 마크업이 될 수 있게 할 것, 평균 점수는 소수점 둘째자리까지</p>
+    <script>
+        let userName = prompt("이름을 입력해 주세요.");
+        let scoreKo = Number(prompt("국어 점수를 입력해 주세요."));
+        let scoreEn = Number(prompt("영어 점수를 입력해 주세요."));
+        let scoreMa = Number(prompt("수학 점수를 입력해 주세요."));
+        let scoreSo = Number(prompt("사회 점수를 입력해 주세요."));
+        let scoreSum = scoreKo + scoreEn + scoreMa + scoreSo;
+        let scoreAver = (scoreSum/4).toFixed(2);
+        let scoreAverNumber = scoreSum/4;
+        let grade = scoreAverNumber >= 90 ? "1등급" : scoreAverNumber >=80 ? "2등급" : scoreAverNumber >= 70 ? "3등급" : "4등급";
+
+        document.write("<p>["+userName+"]님의 평균 점수는 ["+scoreAver+"]점입니다. ["+grade+"]입니다.</p>")
+    </script>
+    
+</body>
+</html>
