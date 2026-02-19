@@ -1,9 +1,15 @@
+:root{
+    --base-wide:22px;
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+}
+
 html{
-    font-size: 20px;
     font-family: 'Pretendard';
     font-weight: 400;
 }
-.title-box{
+.common-frame{
     width: 1600px;
     margin: 0 auto;
 }
@@ -35,10 +41,6 @@ html{
     line-height: 90%;
     text-transform: uppercase;
     color: #fff;
-}
-.content{
-    width: 1604px;
-    margin: 0 auto;
 }
 .content h3{
     font-size: 2rem;
@@ -82,4 +84,57 @@ html{
     -webkit-line-clamp: 2;                /* 보여줄 최대 줄 수 */
     overflow: hidden;                     /* 넘치는 내용 숨기기 */
     text-overflow: ellipsis;              /* 말줄임 표기 (보조) */
+}
+
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner {
+        height: 600px;
+    }
+    .banner h2 {
+        width: 952px;
+        margin: 0 2rem;
+        font-size: 4.4rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .banner {
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner h2 {
+        width: auto;
+        margin: 0 1rem;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .gal ul {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
 }
