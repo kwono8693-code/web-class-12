@@ -1,3 +1,9 @@
+:root{
+    --base-wide:22px;
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+}
 html{
     font-family: 'Pretendard', sans-serif;
     font-size: 20px;
@@ -43,4 +49,31 @@ header .inner-header{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+}
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1600px){
+    .inner-header {
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .banner {
+        height: 600px;
+    }
+    .banner h1 {
+        font-size: 4.4rem;
+    }
 }
