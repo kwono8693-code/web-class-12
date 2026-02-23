@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12기 명단</title>
+    <title>ex1-review</title>
     <link rel="stylesheet" href="./css/ex1.css">
     <script src="./js/classmate.js"></script>
 </head>
@@ -12,9 +12,9 @@
         <h1>12기 멋쟁이 토마토</h1>
         <p>12기 학생들을 소개합니다.</p>
         <ul class="grid-box">
-            <script>
-                for(let i = 0 ; i<class12th.length ; i++){
-                    document.write(`
+        <script>
+            for(i = 0; i<class12th.length; i++){
+                document.write(`
                         <li>
                             <figure>
                                 <img src="./img/${class12th[i][9]}" alt="${class12th[i][1]} 사진">
@@ -27,7 +27,7 @@
                                 <dd>${class12th[i][3]}</dd>
                                 <dt>띠</dt>
                                 <dd>${class12th[i][4]}</dd>
-                                <dt>MBTI</dt>
+                                <dt>mbti</dt>
                                 <dd>${class12th[i][5]}</dd>
                                 <dt>결혼여부</dt>
                                 <dd>${class12th[i][6]?"기혼":"미혼"}</dd>
@@ -37,13 +37,10 @@
                                 <dd>${class12th[i][8]}</dd>
                             </dl>
                         </li>
-                    `)
-        }
-                // document.write는 무조건 문자데이터를 쓰는 것이다.
-                
-            </script>
+            `)
+            }
             
-            
+        </script>
         </ul>
     </div>
 </body>

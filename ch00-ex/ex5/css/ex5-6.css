@@ -6,7 +6,7 @@
 }
 
 html{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard', sans-serif;
     font-weight: 400;
 }
 .common-frame{
@@ -85,7 +85,9 @@ html{
     overflow: hidden;                     /* 넘치는 내용 숨기기 */
     text-overflow: ellipsis;              /* 말줄임 표기 (보조) */
 }
+@media (max-width:5120px){
 
+}
 @media (max-width:3840px){
     html{
         font-size: var(--base-wide);
@@ -96,19 +98,21 @@ html{
         font-size: var(--base-pc);
     }
 }
-@media (max-width:1024px){
-    html{
-        font-size: var(--base-pad);
-    }
+@media (max-width:1600px){
     .common-frame {
         width: auto;
         margin: 0 2rem;
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
     }
     .banner {
         height: 600px;
     }
     .banner h2 {
-        width: 952px;
+        width: auto;
         margin: 0 2rem;
         font-size: 4.4rem;
     }
@@ -133,8 +137,7 @@ html{
         text-align: center;
     }
     .gal ul {
-        display: flex;
-        gap: 1rem;
         flex-direction: column;
+        gap: 2rem;
     }
 }
