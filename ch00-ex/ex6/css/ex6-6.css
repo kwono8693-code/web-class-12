@@ -23,8 +23,7 @@ header .inner-header{
 .gnb{
     display: flex;
 }
-.gnb li{
-}
+
 .gnb li a{
     display: flex;
     height: 100%;
@@ -49,6 +48,9 @@ header .inner-header{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+}
+@media (max-width:5120px) {
+
 }
 @media (max-width:3840px){
     html{

@@ -1,7 +1,17 @@
+:root{
+    --base-wide:22px;
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+}
+
 html{
     font-family: 'Pretendard', sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+headermobile{
+    display: none;
 }
 /* .stp1{
     font-family: "abo";
@@ -20,8 +30,7 @@ header .common-frame{
 .gnb{
     display: flex;
 }
-.gnb li{
-}
+
 .gnb a{
     height: 100%;
     display: flex;
@@ -45,4 +54,69 @@ header .common-frame{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+.logo a{
+    display: block;
+    height: 100%;
+}
+.logo a img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:5120px) {}
+@media (max-width:3840px) {}
+@media (max-width:1920px) {
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1600px){
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+@media (max-width:1024px) {
+    html{
+        font-size: var(--base-pad);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner {
+        height: 600px;
+    }
+    .banner h1 {
+        font-size: 4.4rem;
+    }
+}
+@media (max-width:900px) {
+        header{
+            display: none;
+        }
+        headermobile{
+            display: block;
+        }
+        headermobile .common-frame{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+}
+@media (max-width:768px) {
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+
 }
