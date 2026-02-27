@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom의 메서드와 프로퍼티</title>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고 있는 속성 값을 설정하거나 가져올 수 있다.</p>
+    <figure>
+        <img class="img1" src="./img/강건희.png" alt="강건희">
+        <figcaption class="cap1">강건희</figcaption>
+    </figure>
+    <script>
+        //태그를 선택
+        let img1 = document.querySelector(".img1"); // document.querySelector(".img1") => {img1}
+        // {
+        //     tagname:"img",
+        //     style:{},
+        //     getAttribute:function(key){
+        //     }
+        // }
+        console.log(img1)
+        console.dir(img1)
+        let originalSrc = img1.getAttribute("src");
+        console.log(originalSrc);
+        let originalAlt = img1.getAttribute("alt");
+        console.log(originalAlt);
+
+        let cap1 = document.querySelector(".cap1");
+        console.log(cap1.textContent)
+        // cap1.textContent = "<i>장윤서</i>"
+        cap1.innerHTML = "<i>장윤서</i>"; // cap1.innerText = "<i>장윤서</i>";
+    </script>
+
+    <h1>태그의 클래스 제어</h1>
+    <p>선택된 태그의 클래스를 추가하거나 삭제할 수 있다.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id ratione hic incidunt provident perspiciatis expedita animi nostrum adipisci distinctio optio sed repellat ab, at eligendi exercitationem aspernatur non nam.</p>
+    <script>
+        // let para = document.querySelector(".para");
+        // para.classList.add("on");
+        // para.classList.remove("on");
+        let paras = document.querySelectorAll("para");
+        paras.forEach(tag=>{
+            tag.classList.add("on")
+        })
+    </script>
+
+    <h1>태그의 포함 관계를 사용하여 태그 선택하기</h1>
+    <ul class="list">
+        <li>1</li>
+        <li class="me">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        let ultag = document.querySelector(".list");
+        let litags = ultag.children;
+        litags[3].style.color ="red"
+        let me = document.querySelector(".me")
+        me.style.fontSize = "20px";
+        me.parentElement.style.border = "2px solid green";
+        me.parentElement.parentElement.style.border = "2px solid green";
+        me.nextElementSibling.style.color = "blue";
+        me.previousElementSibling.style.color = "pink";
+        me.parentElement.parentElement.children[1].style.backgroundColor = "pink";
+        me.parentElement.parentElement.children[0].textContent[0]
+    </script>
+</body>
+</html>
