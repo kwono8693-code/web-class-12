@@ -100,54 +100,54 @@ header .common-frame{
     }
 }
 @media (max-width:900px) {
-        .hidden-gnb{
-            display: block;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            transform: translateX(100%);
-            z-index: 1000;
-            transition: all .5s ease 0s;
-        }
-        .hidden-gnb.on{
-            transform: translateX(0%);
-        }
-        .hd-top{
-            border-bottom: 1px solid #000;
-        }
-        .hd-top .common-frame{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .hd-bottom{
-            margin-top: 1rem;
-        }
-        .hd-bottom ul li{
-            padding: 1rem 0;
-            border-bottom: 1px solid #eee;
-            font-family: Pretendard;
-            font-weight: 600;
-            line-height: 100%;
-            text-transform: uppercase;
-        }
-        header{
-            display: none;
-        }
-        headermobile{
-            display: block;
-        }
-        headermobile .common-frame{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .btn-menu-close, .btn-menu{
-            cursor: pointer;
-        }
+    .hidden-gnb{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        transform: translateX(100%);
+        z-index: 1000;
+        transition: all .5s ease 0s;
+    }
+    .hidden-gnb.on{
+        transform: translateX(0%);
+    }
+    .hd-top{
+        border-bottom: 1px solid #000;
+    }
+    .hd-top .common-frame{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hd-bottom{
+        margin-top: 1rem;
+    }
+    .hd-bottom ul li{
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+        font-family: Pretendard;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    header{
+        display: none;
+    }
+    headermobile{
+        display: block;
+    }
+    headermobile .common-frame{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn-menu-close, .btn-menu{
+        cursor: pointer;
+    }
 }
 @media (max-width:768px) {
     html{

@@ -1,0 +1,53 @@
+*{margin: 0; padding: 0;}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+}
+
+img{
+    max-width: 100%;
+}
+.popup{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+    width: 400px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px black;
+}
+.content-popup{
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.popup-controller{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.popup-controller span{
+    cursor: pointer;
+    padding: .4rem 1rem;
+    border: 1px solid #000;
+}
+.modal.blind{
+    display: none;
+}
+.popup{
+    /* transition: all .4s ease 0s;
+    opacity: 1;
+    pointer-events: auto; */
+}
+.popup.blind{
+    display: none;
+    /* opacity: 0;
+    pointer-events: none; */
+    /* 태그가 마우스에도 반응하지 않게 함 */
+}

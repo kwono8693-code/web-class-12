@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+
+.tab-menu{
+    width: 800px;
+    margin: 50px auto;
+}
+.tabs{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.tabs span{
+    /* filter: drop-shadow(1px, 1px); */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .2rem 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .3s ease 0s;
+}
+.tabs span:hover{
+    background-color: #000;
+    color: #fff;
+}
+.tabs span.active{
+    background-color: #000;
+    color: #fff;
+}
+.tab-des section{
+    display: none;
+}
+.tab-des section.active{
+    display: block;
+}
