@@ -21,12 +21,43 @@ html{
 
 .popup{
     display: none;
+    position: fixed;
+    width: 300px;
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 3000;
+}
+.popup.on{
+    display: block;
+}
+.popup p{
+    margin: 1rem 0;
+}
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+#btn-close{
+    cursor: pointer;
 }
 .modal{
     display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+}
+.modal.on{
+    display: block;
 }
 header{
-    border: 1px solid red;
     width: 1200px;
     height: 100px;
     display: flex;
@@ -34,20 +65,105 @@ header{
     margin: 0 auto;
     z-index: 1000;
     position: relative;
+    align-items: flex-start;
 }
 .gnb{
     display: flex;
-    border: 1px solid blue;
     margin-top: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    transition: all .5s ease 0s;
 }
-.gnb>li{
-    border: 1px solid gold;
+.gnb:hover{
+    max-height: 300px;
 }
-
+.gnb:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 0px;
+    background-color: #576b2e;
+    z-index: -1;
+    transition: all .5s ease 0s;
+}
+.gnb:hover:after{
+    height: 180px;
+}
 .gnb a{
     display: flex;
     height: 50px;
     width: 180px;
     align-items: center;
-    border: 1px solid green;
+    padding: 0 10px;
+}
+.gnb ul>li{
+    color: #fff;
+}
+.gnb>li:hover>a{
+    background-color: #333;
+    color: #fff;
+}
+.gnb ul>li>a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.station{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.train{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: all .6s ease 0s;
+}
+.train li{
+    flex: 1;
+}
+.content{
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.content section{
+    flex: 1;
+    border: 1px solid red;
+}
+.content h3{
+    margin-bottom: 20px;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap: 20px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+}
+.banner a{
+    padding: .4rem 1rem;
+    background-color: #576b2e;
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
