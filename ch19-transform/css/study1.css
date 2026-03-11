@@ -62,7 +62,7 @@
 }
 .i{background-color: chocolate;}
 .i:hover{
-    transform: scaleY(2);
+    transform: scale(1.2);
 }
 .j{background-color: hotpink;}
 .j:hover{
