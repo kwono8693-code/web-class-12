@@ -1,0 +1,127 @@
+@charset "utf-8";
+html{background-color: #fff; color: #333;}
+*{margin: 0; padding: 0;}
+ a{text-decoration: inherit; color: inherit;}
+ ul{list-style: none;}
+ img{max-width: 100%;}
+.popup{
+    display: none;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3000;
+}
+.popup.on{
+    display: block;
+}
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+#btn-close{
+    cursor: pointer;
+}
+ header{
+    height: 100px;
+    z-index: 1000;
+    position: relative;
+ }
+ header .common-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.logo{
+    align-self: flex-start;
+}
+ .gnb{
+    margin-top: 50px;
+    display: flex;
+    overflow: hidden;
+    height: 50px;
+    transition: all .5s ease 0s;
+    background-color: #fff;
+ }
+ .gnb:hover{
+    height: 260px;
+    
+ }
+ .gnb a{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .gnb li:hover>a{
+    background-color: #333;
+    color: #fff;
+ }
+ .gnb>li{
+    border: 1px solid #000;
+ }
+
+ .common-frame{
+    width: 1200px;
+    margin: 0 auto;
+ }
+
+ .station{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+ }
+ .train{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 1s ease 0s;
+ }
+ .train li{
+    flex: 1;
+ }
+ .content{
+    display: flex;
+    height: 200px;
+ }
+ .content section{
+    flex: 1;
+ }
+ footer{
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+ }
+ footer .common-frame{
+    display: flex;
+    align-items: center;
+    height: 100%;
+ }
+.menu-foot{
+    display: flex;
+}
+.gallery{
+    display: flex;
+}
+.tabs{
+    display: flex;
+    gap:.5rem;
+}
+.tabs span{
+    border:1px solid #000;
+    padding:.2rem 1rem;
+}
+.tabs span.on{
+    background-color: #000;
+    color:#fff;;
+}
+.tab-desc>div{
+    display: none;
+}
+.tab-desc>div.on{
+    display: block;
+}
