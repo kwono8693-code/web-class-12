@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         count++
         if(count>2){count=0}
         train.style.transform = `translateX(${-33.333*count}%)`
-
     }
         ,2500)
 
