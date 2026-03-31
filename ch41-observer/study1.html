@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터섹션 옵져버 객체</title>
+    <link rel="stylesheet" href="./css/study1.css">
+    <link rel="stylesheet" href="./css/observer.css">
+    <script src="./js/study1.js"></script>
+</head>
+<body>
+    <h1>intersection observer</h1>
+    <div class="content">
+        <h2 class="ltr">웹 디자인의 기초</h2>
+        <p>웹 디자인은 사용자 경험을 고려하여 시각적으로 매력적인 웹사이트를 만드는 과정입니다. HTML, CSS, JavaScript를 사용하여 구조, 스타일, 상호작용을 구현합니다.</p>
+        <h3>주요 요소</h3>
+        <ul>
+            <li><strong>HTML:</strong> 웹 페이지의 구조를 정의하는 마크업 언어</li>
+            <li><strong>CSS:</strong> 스타일과 레이아웃을 적용하여 디자인을 꾸미는 스타일시트</li>
+            <li><strong>JavaScript:</strong> 동적인 기능을 추가하여 사용자와 상호작용</li>
+        </ul>
+        <h3 class="blur">디자인 원칙</h3>
+        <p>효과적인 웹 디자인을 위해서는 시각적 계층, 색상 조화, 타이포그래피, 반응형 디자인 등을 고려해야 합니다.</p>
+        <h3 class="blur">웹 표준</h3>
+        <p>웹 표준은 World Wide Web Consortium (W3C)과 같은 기구에서 정의한 규칙과 가이드라인으로, 웹 페이지가 다양한 브라우저와 장치에서 일관되게 작동하도록 합니다. 웹 표준을 준수하면 코드의 호환성, 유지보수성, 검색 엔진 최적화 (SEO)가 향상됩니다.</p>
+        <p>웹 표준의 주요 구성 요소로는 HTML (HyperText Markup Language), CSS (Cascading Style Sheets), JavaScript 등이 있습니다. HTML은 웹 페이지의 구조를 정의하며, 시맨틱 요소를 사용하여 콘텐츠의 의미를 명확히 합니다. CSS는 스타일링을 담당하며, 레이아웃, 색상, 폰트 등을 제어합니다. JavaScript는 클라이언트 측 스크립팅을 통해 동적인 기능을 추가합니다.</p>
+        <p>웹 표준을 따르는 것은 개발자들에게 표준화된 방법을 제공하여, 코드의 재사용성과 확장성을 높입니다. 또한, 웹 표준 준수는 웹 접근성을 향상시키고, 미래의 기술 변화에 대비할 수 있게 합니다. 예를 들어, HTML5 표준은 멀티미디어 지원, 시맨틱 마크업, API 통합 등을 포함하여 현대적인 웹 애플리케이션 개발을 지원합니다.</p>
+        <h3 class="blur">웹 접근성</h3>
+        <p>웹 접근성은 모든 사용자가 웹 콘텐츠에 동등하게 접근할 수 있도록 하는 것을 의미합니다. 이는 장애인, 고령자, 다양한 환경의 사용자들을 포함합니다. 웹 접근성은 Web Content Accessibility Guidelines (WCAG) 2.1과 같은 국제 표준에 기반합니다.</p>
+        <p>웹 접근성의 주요 원칙으로는 인지 가능성 (Perceivable), 조작 가능성 (Operable), 이해 가능성 (Understandable), 견고성 (Robust)이 있습니다. 인지 가능성은 텍스트 대안, 캡션, 오디오 설명 등을 통해 콘텐츠를 다양한 방식으로 제공하는 것을 포함합니다. 예를 들어, 이미지에는 alt 속성을 사용하여 시각 장애인이 스크린 리더로 콘텐츠를 이해할 수 있게 합니다.</p>
+        <p>조작 가능성은 키보드 네비게이션, 충분한 시간 제공, 발작 유발 요소 방지 등을 의미합니다. 사용자가 마우스 없이도 웹사이트를 탐색할 수 있어야 합니다. 이해 가능성은 콘텐츠가 명확하고 예측 가능하며, 입력 지원을 제공하는 것을 포함합니다. 견고성은 다양한 사용자 에이전트와 보조 기술과의 호환성을 유지하는 것입니다.</p>
+        <p>웹 접근성을 구현하기 위해서는 ARIA (Accessible Rich Internet Applications) 속성을 사용하고, 색상 대비를 고려하며, 폼 요소에 적절한 라벨을 제공해야 합니다. 또한, 반응형 디자인을 통해 다양한 화면 크기와 입력 방법에 대응합니다. 웹 접근성은 법적 요구사항일 뿐만 아니라, 더 넓은 사용자 기반을 확보하고 브랜드 평판을 향상시키는 데 중요합니다.</p>
+        <h3 class="blur">HTML 마크업</h3>
+        <p>HTML (HyperText Markup Language)은 웹 페이지의 구조를 정의하는 마크업 언어입니다. 태그를 사용하여 텍스트, 이미지, 링크 등의 요소를 구조화합니다. HTML은 웹의 기본 구성 요소로, 브라우저가 콘텐츠를 해석하고 표시하는 데 사용됩니다.</p>
+        <ol>
+            <li><strong>기본 구조:</strong> HTML 문서는 &lt;!DOCTYPE html&gt; 선언으로 시작하며, &lt;html&gt;, &lt;head&gt;, &lt;body&gt; 요소로 구성됩니다. &lt;head&gt;에는 메타데이터가 포함되고, &lt;body&gt;에는 실제 콘텐츠가 들어갑니다.</li>
+            <li><strong>헤딩 태그:</strong> &lt;h1&gt;부터 &lt;h6&gt;까지의 헤딩 태그는 콘텐츠의 계층 구조를 정의합니다. &lt;h1&gt;은 가장 중요한 제목으로 사용되며, 검색 엔진 최적화에 영향을 미칩니다.</li>
+            <li><strong>단락과 텍스트:</strong> &lt;p&gt; 태그는 단락을 정의하며, &lt;br&gt;은 줄 바꿈을, &lt;strong&gt;과 &lt;em&gt;은 텍스트 강조를 위해 사용됩니다. 텍스트 서식을 위한 다양한 태그가 있습니다.</li>
+            <li><strong>링크와 네비게이션:</strong> &lt;a&gt; 태그는 하이퍼링크를 생성하며, href 속성으로 대상 URL을 지정합니다. 내비게이션 메뉴를 만들 때 필수적입니다.</li>
+            <li><strong>이미지와 미디어:</strong> &lt;img&gt; 태그는 이미지를 삽입하며, src와 alt 속성이 중요합니다. &lt;video&gt;와 &lt;audio&gt; 태그는 멀티미디어 콘텐츠를 지원합니다.</li>
+            <li><strong>리스트:</strong> &lt;ul&gt; (순서 없는 리스트), &lt;ol&gt; (순서 있는 리스트), &lt;li&gt; 태그를 사용하여 목록을 만듭니다. 중첩 리스트도 가능합니다.</li>
+            <li><strong>테이블:</strong> &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; 태그로 데이터를 표 형식으로 표시합니다. 접근성을 위해 &lt;caption&gt;과 &lt;thead&gt; 등을 사용합니다.</li>
+            <li><strong>폼:</strong> &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; 등으로 사용자 입력을 받습니다. action과 method 속성으로 데이터를 처리합니다.</li>
+            <li><strong>시맨틱 요소:</strong> HTML5에서 도입된 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; 등의 요소는 콘텐츠의 의미를 명확히 합니다.</li>
+            <li><strong>메타데이터:</strong> &lt;meta&gt; 태그는 문자 인코딩, 뷰포트 설정, 설명 등을 정의합니다. SEO와 접근성에 필수적입니다.</li>
+            <li><strong>스크립트와 스타일:</strong> &lt;script&gt; 태그는 JavaScript를, &lt;link&gt; 태그는 CSS를 연결합니다. 외부 파일이나 인라인 코드를 사용할 수 있습니다.</li>
+            <li><strong>접근성 고려:</strong> alt 속성, aria-* 속성, tabindex 등을 사용하여 모든 사용자가 콘텐츠에 접근할 수 있게 합니다.</li>
+            <li><strong>반응형 디자인:</strong> 뷰포트 메타 태그와 미디어 쿼리를 사용하여 다양한 장치에 맞게 조정합니다.</li>
+            <li><strong>유효성 검증:</strong> W3C Validator를 사용하여 HTML 코드의 유효성을 확인하고, 오류를 수정합니다.</li>
+            <li><strong>최신 트렌드:</strong> HTML5의 새로운 기능인 Canvas, SVG, Web Components 등을 활용하여 풍부한 웹 애플리케이션을 만듭니다.</li>
+        </ol>
+        <h3 class="ltr">CSS 기본 개념</h3>
+        <p>CSS (Cascading Style Sheets)는 HTML 요소의 스타일과 레이아웃을 정의하는 스타일시트 언어입니다. 웹 페이지의 시각적 디자인을 담당하며, 색상, 폰트, 간격 등을 제어합니다. CSS는 HTML과 분리되어 있어 코드의 유지보수성을 높입니다.</p>
+        <ol>
+            <li><strong>선택자 (Selectors):</strong> CSS 규칙을 적용할 HTML 요소를 선택합니다. 요소 선택자 (예: p), 클래스 선택자 (.class), ID 선택자 (#id), 속성 선택자 등이 있습니다. 선택자를 조합하여 특정 요소를 타겟팅할 수 있습니다.</li>
+            <li><strong>속성 (Properties)과 값 (Values):</strong> 각 CSS 규칙은 속성과 값으로 구성됩니다. 예를 들어, color: red;는 텍스트 색상을 빨간색으로 설정합니다. 다양한 속성이 레이아웃, 타이포그래피, 색상 등을 제어합니다.</li>
+            <li><strong>상속 (Inheritance):</strong> 일부 속성은 부모 요소에서 자식 요소로 상속됩니다. 예를 들어, 폰트 관련 속성은 상속되지만, 배경색은 상속되지 않습니다. 상속을 이해하면 스타일링을 효율적으로 할 수 있습니다.</li>
+            <li><strong>우선순위 (Specificity):</strong> 여러 CSS 규칙이 동일한 요소에 적용될 때 우선순위를 결정합니다. ID 선택자가 클래스보다 우선하며, !important 선언이 가장 높은 우선순위를 가집니다.</li>
+            <li><strong>박스 모델 (Box Model):</strong> 모든 HTML 요소는 콘텐츠, 패딩, 테두리, 마진으로 구성된 박스로 간주됩니다. width와 height는 콘텐츠 영역만을 지정하며, box-sizing 속성으로 이를 조정할 수 있습니다.</li>
+            <li><strong>디스플레이 속성 (Display):</strong> 요소의 표시 방식을 제어합니다. block, inline, inline-block, flex, grid 등이 있으며, 레이아웃을 구성하는 데 필수적입니다.</li>
+            <li><strong>포지셔닝 (Positioning):</strong> 요소의 위치를 지정합니다. static, relative, absolute, fixed, sticky 값이 있으며, top, left, right, bottom 속성과 함께 사용됩니다.</li>
+            <li><strong>플렉스박스 (Flexbox):</strong> 1차원 레이아웃을 위한 모델로, 컨테이너와 아이템의 정렬과 분배를 쉽게 합니다. flex-direction, justify-content, align-items 등의 속성을 사용합니다.</li>
+            <li><strong>그리드 (Grid):</strong> 2차원 레이아웃을 위한 강력한 시스템입니다. grid-template-columns, grid-template-rows 등으로 복잡한 레이아웃을 만듭니다.</li>
+            <li><strong>반응형 디자인 (Responsive Design):</strong> 미디어 쿼리를 사용하여 다양한 화면 크기에 맞게 스타일을 조정합니다. @media 규칙으로 브레이크포인트를 설정합니다.</li>
+            <li><strong>색상과 배경 (Colors and Backgrounds):</strong> 색상을 지정하는 방법 (이름, HEX, RGB, HSL)과 배경 속성 (background-color, background-image 등)을 다룹니다.</li>
+            <li><strong>타이포그래피 (Typography):</strong> 폰트 패밀리, 크기, 굵기, 줄 높이 등을 제어합니다. 웹 폰트 (@font-face)를 사용하여 커스텀 폰트를 로드할 수 있습니다.</li>
+            <li><strong>트랜지션과 애니메이션 (Transitions and Animations):</strong> 요소의 상태 변화를 부드럽게 만듭니다. transition 속성으로 간단한 효과를, @keyframes로 복잡한 애니메이션을 정의합니다.</li>
+            <li><strong>변수와 함수 (Variables and Functions):</strong> CSS 변수 (--variable)를 사용하여 재사용 가능한 값을 정의합니다. calc() 함수로 계산을 수행할 수 있습니다.</li>
+            <li><strong>접근성과 성능 (Accessibility and Performance):</strong> 색상 대비, 포커스 표시 등을 고려하여 접근성을 높입니다. CSS의 성능 최적화를 위해 불필요한 규칙을 최소화합니다.</li>
+        </ol>
+    </div>
+</body>
+</html>
